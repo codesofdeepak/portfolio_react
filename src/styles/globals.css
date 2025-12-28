@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 5%;
+    --foreground: 0 0% 95%;
+    --primary: 265 100% 66%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 200 100% 50%;
+    --accent: 145 100% 50%;
+    --muted: 0 0% 15%;
+    --border: 0 0% 25%;
+    --glass: rgba(255, 255, 255, 0.05);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: hsl(var(--background));
+    color: hsl(var(--foreground));
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border-radius: 5px;
+  }
+
+  ::selection {
+    background: hsl(var(--primary) / 0.3);
+    color: hsl(var(--primary-foreground));
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply backdrop-blur-xl bg-glass border border-white/10 shadow-2xl;
+  }
+
+  .neon-glow {
+    text-shadow: 0 0 10px hsl(var(--primary)), 
+                 0 0 20px hsl(var(--primary)), 
+                 0 0 30px hsl(var(--primary));
+  }
+
+  .cyber-border {
+    position: relative;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+
+  .cyber-border::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    background: linear-gradient(45deg, 
+      hsl(var(--primary)), 
+      hsl(var(--secondary)), 
+      hsl(var(--accent)));
+    border-radius: inherit;
+  }
+
+  .grid-bg {
+    background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+}
+
