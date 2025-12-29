@@ -18,7 +18,6 @@ const EducationClone = () => {
       institution: 'Vellore Institute of Technology',
       degree: 'B.Tech in Computer Science & Engineering (Information Security)',
       period: '2022 – Present',
-      gpa: '7.8 / 10',
       description:
         'Undergraduate program focused on computer science fundamentals with specialization in information security, data systems, and modern application development.',
       courses: [
