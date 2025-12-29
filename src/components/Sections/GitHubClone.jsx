@@ -35,7 +35,7 @@ const GitHubClone = () => {
       forks: 9,
       tech: ['SQL', 'Joins', 'CTE', 'Aggregations', 'Window Functions'],
       color: '#E38C00',
-      github: 'https://github.com/deepakkumarsaw/sales-data-analysis-sql',
+      github: 'https://github.com/codesofdeepak/sales_data_analysis_project',
       demo: '',
     },
     {
@@ -48,7 +48,7 @@ const GitHubClone = () => {
       forks: 10,
       tech: ['OpenCV', 'NLP', 'React', 'JWT', 'REST APIs'],
       color: '#3572A5',
-      github: 'https://github.com/deepakkumarsaw/ai-wellness-coach',
+      github: 'https://github.com/codesofdeepak/ai-wellness-coach',
       demo: '',
     },
     {
