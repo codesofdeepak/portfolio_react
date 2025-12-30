@@ -25,23 +25,24 @@ const LinkedInClone = () => {
     'Web Security': 10,
   })
 
-  const experiences = [
-    {
-      id: 1,
-      company: 'IIT Delhi (Jet Aerospace Internship)',
-      role: 'Software & Systems Intern',
-      period: '2024',
-      location: 'New Delhi, India',
-      description:
-        'Worked on technology-driven solutions involving drones, IoT systems, and data processing.',
-      achievements: [
-        'Worked with sensor data and basic analytics',
-        'Collaborated in a multidisciplinary technical environment',
-        'Gained exposure to real-world engineering workflows',
-      ],
-      skills: ['Python', 'IoT Basics', 'Data Processing'],
-    },
-    {
+ const experiences = [
+  {
+    id: 1,
+    company: 'IIT Delhi',
+    role: 'Web Development Intern',
+    period: '2024',
+    location: 'New Delhi, India',
+    description:
+      'Worked as a Web Development Intern focusing on building responsive and secure web applications using modern frontend and backend technologies.',
+    achievements: [
+      'Designed and developed responsive web interfaces',
+      'Integrated frontend with backend APIs',
+      'Implemented authentication and basic security practices',
+      'Optimized UI performance and usability',
+    ],
+    skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Backend Integration'],
+  },
+  {
       id: 2,
       company: 'Academic & Personal Projects',
       role: 'Full-Stack & Data Projects',
